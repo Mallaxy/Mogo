@@ -15,4 +15,7 @@ $(document).ready(function(){
             '                </svg>\n' +
             '            </button>'
     });
+    $('.burger-icon').click(function(event) {
+        $('.burger-icon').toggleClass('active');
+    })
 });
