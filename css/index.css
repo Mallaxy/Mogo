@@ -310,7 +310,7 @@ div[class*=__content] {
 }
 
 .statistic__list {
-  height: 42%;
+  height: calc(200px + 70 * ((100vw - 320px) / 1600));
   display: flex;
 }
 
@@ -358,6 +358,7 @@ div[class*=__content] {
   .statistic__list {
     flex-direction: column;
     align-items: center;
+    height: 100%;
   }
 
   .statistic__item {
@@ -516,19 +517,14 @@ div[class*=__content] {
   .service__image-container {
     width: 100%;
     height: 100%;
-    padding: 10px;
-  }
-
-  .service__sidebar {
-    height: 100%;
   }
 }
 .item__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
-  height: calc(46px + 14 * ((100vw - 320px) / 1600));
+  padding: 10px;
+  height: calc(47.3px + 12.7 * ((100vw - 320px) / 1600));
   cursor: pointer;
 }
 
@@ -541,8 +537,10 @@ div[class*=__content] {
 
 .item__content {
   height: auto;
+  height: calc(142px + 38 * ((100vw - 320px) / 1600));
   border-top: 1px solid #e5e5e5;
-  padding: 20px;
+  padding: calc(10px + 10 * ((100vw - 320px) / 1600));
+  overflow-y: scroll;
 }
 
 .item__paragraph {
